@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        h1{
+           font-size: 100px;
+           /* -webkit-text-stroke: 2px black; */
+           color : white;
+           /* background-image : url('https://img.freepik.com/free-photo/abstract-backdrop-illustration-with-multi-colored-design-shapes-generated-by-ai_188544-15582.jpg');
+           background-clip:text;
+           -webkit-background-clip: text;
+           background-position: center; */
+           mix-blend-mode: difference;
+           position: relative;
+           z-index: 5;
+        }
+        #cursor{
+            height: 30px;
+            width: 30px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            /* mix-blend-mode: difference; */
+        } 
+    </style>
+</head>
+<body>
+    <div id="cursor"></div>
+    <h1>MahakJat</h1>
+    <script src="Cursor2.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            padding: 50px 230px;
+
+        }
+        #card{
+            height: 500px;
+            width: 350px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+        #imgDiv{
+            height: 350px;
+            border-radius: 10px;
+            background-color: rgb(232, 230, 230);
+            padding: 10px;
+            position: relative;
+        } 
+        #imgDiv img{
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: 50% 20%;
+            
+        }
+        h4{
+            font-family:gilroy ;
+            font-weight: 500;
+        }
+        h3{
+            position: absolute;
+            color: rgb(239, 239, 239);
+            font-size: 50px;
+            top: 40%;
+            left: 50%;  
+            transform: translate(-50% ,-50%) scale(0);
+            /* scale is the property of transform and if
+             we give transfrom scale in next it then that we remove 
+             the previous translate property so we have to write this
+              in one line only */
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+         <div id="imgDiv">
+            <h4>User Id</h4>
+            <h3>
+                <i class="ri-heart-3-fill"></i>
+            </h3>
+          <img src="https://images.unsplash.com/photo-1725944593135-9d829487ea01?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+         </div>
+    </div>
+    <script src="Like.js"></script>
+</body>
+</html>

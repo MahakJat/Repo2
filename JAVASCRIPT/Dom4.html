@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0%;
+            padding : 0%;
+            box-sizing: border-box;
+
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        #box{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(204, 204, 164);
+            border-radius: 25%;
+        }
+        flex{
+            display:flex;
+            margin-top: 200px;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+        button{
+            padding: 15px 30px;
+            border-radius: 25px;
+            margin-top: 20px;
+            border: none;
+            background-color: rgb(242, 242, 98);
+            box-shadow: 2px 2px 2px rgb(210, 210, 136);
+            font-family: gilroy;
+            font-size: large;
+            margin-right: 20px;
+            font-weight: 700;
+        }
+        button:active{
+            scale:0.9
+        }
+    </style>
+</head>
+<body>
+    <flex><div id = "box"></div>
+           <div>
+             <button id = "btn1">square</button>
+             <button id = "btn2">circle</button>
+           </div>
+    </flex>
+    <script src="Dom4.js"></script>
+</body>
+</html>

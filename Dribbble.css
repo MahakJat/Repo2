@@ -1,0 +1,548 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #F8F7F4;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: mona;
+  src: url(./Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+}
+@font-face {
+  font-family: normal;
+  src: url(./vEFF2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6kDXr4.woff2);
+}
+#main{
+    width: 100%;
+    min-height: 100%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 35px;
+}
+nav img{
+  height: 50px;
+  transition: all ease 1s;
+}
+nav img:hover{
+  filter: invert(40%);
+}
+nav a{
+  text-decoration: none;
+  color: #000;
+  font-family: mona;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: all ease 1s;
+}
+nav a:hover{
+  color: rgba(102, 102, 102, 0.91);
+}
+#navleft{
+  display: flex;
+  align-items: center;
+  width: 500px;
+  justify-content: space-between;
+}
+#navleft a{
+  padding-top: 10px;
+}
+
+#navleft i{
+  font-size: 25px;
+}
+#navright{
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+#navright input{
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: all ease 0.1s;
+  outline: none;
+  /* when we write some in input box outline comes that outline will be removed */
+}
+/* #navright input:hover{
+  box-shadow:  rgba(249, 216, 222, 0.792); 
+} */
+#navright input::placeholder{
+  font-size: 15px;
+  text-transform: capitalize;
+}
+#navright button{
+  padding:17px 25px;
+  border-radius: 50px;
+  border: none;
+  background-color: #0D0C22;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all ease 1s;
+}
+#navright button:hover{
+  background-color: #565564;
+}
+
+/* center */
+#center{
+  text-align: center;
+  margin-top: 100px;
+}
+#center h4{
+    font-family: normal;
+    background-color: aqua;
+    padding:8px 15px;
+    width: fit-content;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: all ease 10s;
+}
+#center h4:hover{
+  color: rgb(71, 71, 71);
+}
+
+@keyframes colorChange {
+  0%{
+    background-color: #F3AFEA;
+  }
+  50%{
+   
+    background-color: #F1EDC2;
+  }
+  100%{
+    background-color: #d9b1e9;
+  }
+}
+#center h1{
+  margin-top: 50px;
+  font-size: 72px;
+  font-weight: 400;
+  font-family: normal;
+  line-height: 72px; 
+  /* line- height font se kuck jada hoti hai toh uske agar font ke barbar karge toh woh extra space nhi lege */
+}
+#center h3{
+  font-family: mona;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 25px;
+}
+#center button{
+  margin-top: 35px;
+  padding:20px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #0D0C22;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all ease 1s;
+}
+#center button:hover{
+  background-color: #565564;
+}
+
+#move{
+  margin-top: 60px;
+  width: 100%;
+  height: 350px;
+  white-space: nowrap;
+  overflow: hidden;  /* ya toh directly overflow hidden de do toh kaam ho jayega */ 
+  /* overflow-x: hidden; jab overflow-x hidden dete hai to overflow-y auto ho jata hai isliye scroll aa jata hai ek extra toh usse manage karne ke liye overflow-y bhi hidden dena hoga*/ 
+}
+.container{
+  height: 100%;
+  /* width: 100%;  don't give width to the container because you are want more element in the container that does not come in width 100% if you will do widht 100% it will be overlapped by another elements*/ 
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: motion;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.cart{
+  height: 100%;
+  width: 250px;
+  border-radius: 25px;
+  margin-left: 30px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+.cart img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cart video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes motion {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+/* block */
+
+.overlay{
+   height: 100%;
+   width: 100%;
+   top:0;
+   position: absolute;
+   color: rgb(240, 239, 239);
+   font-family: mona;
+   padding: 50px 20px;
+   padding-top: 250px;
+}
+.overlay h4{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.overlay h5{
+  margin-top: 10px;
+  border: 1px solid rgba(240, 239, 239, 0.212);
+  border-radius: 50px;
+  padding: 6px 10px;
+  font-weight: 500;
+  font-size: 11px;
+  margin-left: 2px;
+  display: inline-block;
+}
+
+#part4{
+  width: 100%;
+  padding: 100px 80px;
+  padding-bottom: 150px;
+ 
+}
+#part4 h1{
+   text-align: center;
+   font-size: 50px;
+   font-family: mona;
+   font-weight: 400;
+   margin-bottom: 40px;
+}
+.blockContainer{
+  width: 100%;
+  height: 290px;
+  display: flex;
+  justify-content: space-between;
+}
+.imgpart{
+  width: 280px;
+  height: 220px;
+  border-radius:15px;
+  position: relative;
+  overflow: hidden;
+}
+.imgpart img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imgpart video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlaypart{
+  width: 100%;
+  height: 80px;
+  bottom: -80px;
+  background: linear-gradient(transparent,rgba(0, 0, 0, 0.767));
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 20px 20px;
+  transition: all ease 1s;
+}
+.imgpart:hover .overlaypart{
+   bottom: 0px;
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo i{
+  font-weight: 600;
+  font-size: 16px;
+  transition: all ease 1s;
+}
+.logo i:hover{
+  color: #565564;
+}
+.overlaypart h4{
+  font-family: mona;
+  color: white;
+  font-size: 14px;
+}
+
+/* down */
+.down{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: mona;
+  padding: 10px 0px;
+}
+.downleft{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.icon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #000;
+  overflow: hidden;
+}
+.icon img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.downleft h4{
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+}
+.downleft h5{
+   text-transform: uppercase;
+   padding: 3px 3px;
+   font-size: 11px;
+   font-weight: 900;
+   color:white;
+   background-color: grey;
+   border-radius: 3px;
+   
+}
+.downleft h5:hover{
+  background-color: black;
+}
+
+.downright{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.downright h4{
+  font-weight: 600;
+  font-size:12px;
+  display: inline-block;
+  color: rgb(112, 110, 110);
+}
+.downright i{
+  font-size: 18px;
+  color: rgb(110, 107, 107);
+}
+.heart:hover{
+  color: rgb(217, 30, 61);
+}
+
+#part4 button{
+  margin-left: 38%;
+  padding: 18px 28px;
+  background-color: transparent;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.565);
+  transition: all ease 1s;
+}
+
+#part4 button:hover{
+  color: #565564;
+}
+
+/* part5 */
+#part5{
+  width: 100%;
+  background-color: #FFDA79;
+  text-align: center;
+  padding: 100px;
+}
+#part5 h1{
+  font-family: normal;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 70px;
+}
+#part5 p{
+  font-family: mona;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 30px;
+  line-height: 35px;
+}
+#part5 button{
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  margin-top: 45px;
+}
+#btn1{
+  background-color: #0D0C22;
+  color: white;
+  transition: all ease 1s;
+  margin-right:15px ;
+}
+#btn1:hover{
+  background-color: #6f6e7b;
+}
+#btn2:hover{
+  color: #565564;
+}
+#part5 h2{
+  margin-top: 45px;
+  font-family: mona;
+  font-size: 20px;
+  font-weight: 400;
+}
+#part5 a{
+  color: #000;
+}
+/* part6 */
+#part6{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 240px;
+  padding-top: 40px;
+  /* background-color: rgb(161, 125, 78); */
+}
+.motions{
+  white-space: nowrap;
+  height: 100%;
+  width: 100%;
+  /* if we give this overflow hidden then the shadow will be hidden same of overflow-x hidden  */
+}
+.moving{
+  height: 100%;
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: motion;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.motions:hover .moving{
+  animation-play-state: paused;
+}
+.images{
+  height: 100%;
+  width: 200px;
+  display: inline-block;
+  margin-left: 30px;
+  
+}
+.images h3{
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: mona;
+  font-weight: 500;
+  color: #474653;
+}
+.imagespart{
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px -3px 2px rgba(239, 150, 255, 0.369),
+  6px -6px 0px rgba(160, 255, 174, 0.356);
+  transition: all ease  0.1s;
+}
+.imagespart:hover{
+  box-shadow: 6px -6px 2px #f5bfff91,
+  12px -12px 0px rgba(200, 250, 207, 0.306);
+}
+.imagespart img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* part7 */
+#part7{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+#part7 img{
+     height: 60px;
+}
+#part7center{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+#part7center a{
+  text-decoration: none;
+  font-family: mona;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+#part7right{
+  display: flex;
+  gap: 10px;
+}
+#part7right i{
+  font-size: 25px;
+}
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 70px;
+}
+footer a{
+  text-decoration: none;
+  font-family: mona;
+  color: rgb(144, 141, 141);
+  font-weight: 400;
+  font-size: 14px;
+}
+#leftfooter {
+  display: flex;
+  gap: 15px;
+}
+#rightfooter{
+  display: flex;
+  gap: 15px;
+}

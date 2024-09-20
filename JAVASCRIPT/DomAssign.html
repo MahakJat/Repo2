@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: #ecd67e;
+ /* background-color: black; */
+        }
+        img{
+            height: 300px;
+            margin-left: 30px;
+            filter: brightness(0.8);
+                /* filter: contrast(150%); */
+                /* filter: sepia(100%); */
+                /* filter: saturate(200%); */
+            /* filter: grayscale(0%); */
+        }
+        button{
+           padding: 10px 30px ;
+           border-radius: 25px;
+           border: none;
+           background-color: rgba(39, 156, 229, 0.639);
+           box-shadow: 2px 2px 3px rgb(59, 133, 179);;
+           font-size: large;
+           font-weight: 600;
+           margin-left: 30px;
+           margin-top: 20px;
+          position: relative;
+        }
+        button:active{
+            scale: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div> <button>Run</button></div>
+    <img src="https://pngimg.com/d/minions_PNG39.png" alt="">
+    <script src="DomAssign.js"></script>
+</body>
+</html>

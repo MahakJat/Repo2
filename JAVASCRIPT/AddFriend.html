@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+        #box{
+            height: 75%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: rgb(225, 229, 229);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+        #imgDiv{
+            height: 180px;
+            width: 180px;
+            background-color: cadetblue;
+            overflow: hidden;
+            border-radius: 50%;
+      
+        }
+        #imgDiv img{
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+        }
+        h1{
+           font-family: gilroy;
+           font-size: 30px;
+           margin-top: 20px;
+        }
+        h3{
+            font-family: gilroy;
+            font-size: 20px;
+            color: red;
+        }
+        button{
+            padding:10px 25px;
+            background-color: rgb(26, 157, 162);
+            color:white;
+            font-family: gilroy;
+            font-weight: 600;
+            font-size: 15px;
+            border: none;
+            border-radius: 10px;
+        }
+        button:active{
+            scale:0.9;
+        }
+        p{
+            font-family: gilroy;
+            color:grey;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+     <div id="box">
+         <div id = "imgDiv">
+            <img src="https://plus.unsplash.com/premium_photo-1675731938231-a7c5705836f4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+         </div>
+         <h1>Mahak</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, veniam tempora optio in ratione aliquam fugit cum provident qui eos?</p>
+         <h3>Stranger</h3>
+         <button>Add Friend</button>
+     </div>
+     <script src="AddFriend.js"></script>
+</body>
+</html>

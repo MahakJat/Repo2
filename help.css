@@ -1,0 +1,59 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #F8F7F4;
+  /* overflow-x: hidden; */
+}
+#move{
+    margin-top: 60px;
+    width: 100%;
+    height: 350px;
+    white-space: nowrap;
+    overflow: hidden;  /* ya toh directly overflow hidden de do toh kaam ho jayega */ 
+    /* overflow-x: hidden; jab overflow-x hidden dete hai to overflow-y auto ho jata hai isliye scroll aa jata hai ek extra toh usse manage karne ke liye overflow-y bhi hidden dena hoga*/ 
+  }
+  .container{
+    height: 100%;
+    /* width: 100%;  don't give width to the container because you are want more element in the container that does not come in width 100% if you will do widht 100% it will be overlapped by another elements*/ 
+    white-space: nowrap;
+    display: inline-block;
+  }
+  .cart{
+    height: 100%;
+    width: 250px;
+    border-radius: 25px;
+    margin-left: 30px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    animation-name: motion;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .cart img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cart video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes motion {
+    from{
+      transform: translateX(0%);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }

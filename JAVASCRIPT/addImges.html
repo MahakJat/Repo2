@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(225, 220, 119);
+            gap: 20px;
+        }
+        button{
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-size: 20px;
+            border: none;
+            background-color: rgb(34, 149, 221);
+        }
+        button:active{
+            scale: 0.9;
+        }
+        #box{
+            height: 80%;
+            width: 80%; 
+            background-color: rgb(68, 130, 171);
+            border: 3px solid rgb(60, 15, 105);
+            position: relative;
+        }
+        img{
+            height: 100px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button>Generate</button>
+    <div id="box"></div>
+    <script src="AddImges.js"></script>
+</body>
+</html>
